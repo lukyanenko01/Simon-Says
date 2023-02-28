@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simon_Says" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-R2-1Ri">
+                                <rect key="frame" x="0.0" y="690" width="393" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZA-76-xgQ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fh2-R2-1Ri" firstAttribute="top" secondItem="HZA-76-xgQ" secondAttribute="bottom" id="3QZ-r7-Org"/>
+                            <constraint firstItem="fh2-R2-1Ri" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="631" id="7jw-lz-6J4"/>
+                            <constraint firstItem="fh2-R2-1Ri" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HWZ-vp-ARo"/>
+                            <constraint firstItem="HZA-76-xgQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="T6k-Mi-QWV"/>
+                            <constraint firstItem="fh2-R2-1Ri" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cv6-xZ-2gE"/>
+                            <constraint firstItem="fh2-R2-1Ri" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dmH-ML-wPk"/>
+                            <constraint firstItem="HZA-76-xgQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h6A-89-MpO"/>
+                            <constraint firstItem="HZA-76-xgQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yzY-04-Hi4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-77.099236641221367" y="-65.492957746478879"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
