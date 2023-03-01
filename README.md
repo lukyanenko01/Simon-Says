@@ -9,6 +9,9 @@ the game ends and the winner is determined by the number of completed sequences.
 
 https://user-images.githubusercontent.com/109609990/222162053-897ce705-6dd8-44e0-8fc2-8bdf94d23c99.mp4
 
+
+
+
 Displays a sequence of random colored buttons that must be repeated by the players.
 After each round, players switch places.
 Score counters show how many sequences each player has completed.
