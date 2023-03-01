@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F236FF1829AF29BE006868E5 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F236FF1729AF29BE006868E5 /* CircularButton.swift */; };
 		F29E201E29AD17A900495BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E201D29AD17A900495BC9 /* AppDelegate.swift */; };
 		F29E202029AD17A900495BC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E201F29AD17A900495BC9 /* SceneDelegate.swift */; };
 		F29E202229AD17A900495BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29E202129AD17A900495BC9 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F236FF1729AF29BE006868E5 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		F29E201A29AD17A900495BC9 /* Simon Says.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simon Says.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29E201D29AD17A900495BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F29E201F29AD17A900495BC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F29E202629AD17AA00495BC9 /* Assets.xcassets */,
 				F29E202829AD17AA00495BC9 /* LaunchScreen.storyboard */,
 				F29E202B29AD17AA00495BC9 /* Info.plist */,
+				F236FF1729AF29BE006868E5 /* CircularButton.swift */,
 			);
 			path = "Simon Says";
 			sourceTree = "<group>";
@@ -94,6 +97,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					2,
+					3,
+				);
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F236FF1829AF29BE006868E5 /* CircularButton.swift in Sources */,
 				F29E202229AD17A900495BC9 /* ViewController.swift in Sources */,
 				F29E201E29AD17A900495BC9 /* AppDelegate.swift in Sources */,
 				F29E202029AD17A900495BC9 /* SceneDelegate.swift in Sources */,

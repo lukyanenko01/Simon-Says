@@ -24,7 +24,7 @@
                                         <color key="textColor" red="0.93333339689999995" green="0.94901961089999998" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-ic-bfY">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-ic-bfY">
                                         <rect key="frame" x="8" y="68" width="79.333333333333329" height="52"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="0.93333339689999995" green="0.94901961089999998" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -36,7 +36,7 @@
                                         <color key="textColor" red="0.93333339689999995" green="0.94901961089999998" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCU-YE-wcL">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCU-YE-wcL">
                                         <rect key="frame" x="95.333333333333343" y="68" width="39.666666666666657" height="52"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" red="0.93333339689999995" green="0.94901961089999998" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -72,34 +72,46 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lre-d8-1wL">
                                                 <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="172.66666666666666"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfk-vW-ngd">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfk-vW-ngd" customClass="CircularButton" customModule="Simon_Says" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="172.66666666666666"/>
                                                         <color key="backgroundColor" red="0.83529412749999998" green="0.3803921938" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2f-ym-Z7S"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrC-IY-3se">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrC-IY-3se" customClass="CircularButton" customModule="Simon_Says" customModuleProvider="target">
                                                         <rect key="frame" x="180.66666666666669" y="0.0" width="173" height="172.66666666666666"/>
                                                         <color key="backgroundColor" red="0.37254902719999999" green="0.62745100259999997" blue="0.8392156959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71d-L1-snj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-MZ-azr">
                                                 <rect key="frame" x="0.0" y="180.66666666666663" width="353.66666666666669" height="173"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIj-OA-FNR">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIj-OA-FNR" customClass="CircularButton" customModule="Simon_Says" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="173"/>
                                                         <color key="backgroundColor" red="0.44313728810000003" green="0.80000001190000003" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ue0-hv-X6g"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Io-EM-oQ5">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Io-EM-oQ5" customClass="CircularButton" customModule="Simon_Says" customModuleProvider="target">
                                                         <rect key="frame" x="180.66666666666669" y="0.0" width="173" height="173"/>
                                                         <color key="backgroundColor" red="0.91764706370000004" green="0.78431367870000002" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="colorButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="goz-mM-5I6"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -115,6 +127,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Action Button">
                                             <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="actionButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="369-h2-Jl1"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saymon Says..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BA-dE-PWx">
                                         <rect key="frame" x="19.333333333333343" y="8" width="354" height="152.33333333333334"/>
@@ -154,10 +169,21 @@
                             <constraint firstItem="HZA-76-xgQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yzY-04-Hi4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="mWu-03-Wk3" id="Jd9-5d-eJE"/>
+                        <outletCollection property="colorButtons" destination="Pfk-vW-ngd" collectionClass="NSMutableArray" id="bzD-nc-HBX"/>
+                        <outletCollection property="colorButtons" destination="BrC-IY-3se" collectionClass="NSMutableArray" id="v7U-mU-n6f"/>
+                        <outletCollection property="colorButtons" destination="GIj-OA-FNR" collectionClass="NSMutableArray" id="rpg-DC-Z4p"/>
+                        <outletCollection property="colorButtons" destination="9Io-EM-oQ5" collectionClass="NSMutableArray" id="JsS-1i-Ige"/>
+                        <outletCollection property="scoreLabels" destination="hZc-cm-vQv" collectionClass="NSMutableArray" id="vne-nt-08I"/>
+                        <outletCollection property="scoreLabels" destination="SCU-YE-wcL" collectionClass="NSMutableArray" id="UV1-27-uUb"/>
+                        <outletCollection property="playerLabels" destination="UKy-nZ-kJF" collectionClass="NSMutableArray" id="HHQ-Eq-Cyx"/>
+                        <outletCollection property="playerLabels" destination="Ri4-ic-bfY" collectionClass="NSMutableArray" id="sKv-mD-aUF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217.55725190839695" y="-21.83098591549296"/>
+            <point key="canvasLocation" x="-1028" y="-32"/>
         </scene>
     </scenes>
 </document>
